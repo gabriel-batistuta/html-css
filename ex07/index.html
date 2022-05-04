@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="GBA.ico" type="image/x-icon">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>tente abrir o site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>escute agora:<br>It's Only Worth It If You Work For It - NEFFEX.mp3</p>
+    <audio preload="metadata" src="midia/It's Only Worth It If You Work For It (Clean) - NEFFEX.mp3"controls autoplay loop>Only Worth NEFFEX</audio> <!--tipos de áudio suportados: MP3 - WAV - OGG-->
+    <!--segunda forma-->
+    <br>
+    <p>escute também: <br>Something You Could Never Own - NEFFEX.mp3</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Something You Could Never Own (Clean) - NEFFEX.mp3" type="audio/mpeg">
+        <source src="midia/Something You Could Never Own (Clean) - NEFFEX.ogg" type="audio/ogg">
+        <source src="midia/Something You Could Never Own (Clean) - NEFFEX.wav" type="audio/wav">
+        <p>infelizmente o seu navegador não consegue reproduzir áudio. <a href="midia/Something You Could Never Own (Clean) - NEFFEX.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
